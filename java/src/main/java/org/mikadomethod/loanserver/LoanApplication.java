@@ -1,6 +1,7 @@
 package org.mikadomethod.loanserver;
 
-public class LoanApplication {
+public class LoanApplication
+{
 
     private long applicationNo;
     private long amount;
@@ -8,51 +9,63 @@ public class LoanApplication {
     private String contact;
     private boolean approved;
 
-    public LoanApplication() {
+    public LoanApplication()
+    {
         applicationNo = LoanHandler.getNextId();
     }
 
-    public long getAmount() {
+    public long getAmount()
+    {
         return amount;
     }
 
-    public void setAmount(long amount) {
+    public void setAmount(long amount)
+    {
         this.amount = amount;
     }
 
-    public String getEmail() {
+    public String getEmail()
+    {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setEmail(String email)
+    {
         this.email = email;
     }
 
-    public long getApplicationNo() {
+    public long getApplicationNo()
+    {
         return applicationNo;
     }
 
-    public void setApplicationNo(long applicationNo) {
+    public void setApplicationNo(long applicationNo)
+    {
         this.applicationNo = applicationNo;
     }
 
-    public void approve() {
+    public void approve()
+    {
         setApproved(true);
     }
 
-    public boolean isApproved() {
+    public boolean isApproved()
+    {
         return approved;
     }
 
-    public void setApproved(boolean approved) {
+    public void setApproved(boolean approved)
+    {
         this.approved = approved;
     }
 
-    public void setContact(String who) {
+    public void setContact(String who)
+    {
         this.contact = who;
     }
 
-    public String getContact() {
+    public String getContact()
+    {
         return contact;
     }
 }

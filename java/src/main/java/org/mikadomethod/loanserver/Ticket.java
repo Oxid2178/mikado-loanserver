@@ -1,17 +1,21 @@
 package org.mikadomethod.loanserver;
 
-public class Ticket {
+public class Ticket
+{
     private long id;
 
-    public Ticket(long applicationNo) {
+    public Ticket(long applicationNo)
+    {
         id = applicationNo;
     }
 
-    public long getId() {
+    public long getId()
+    {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(long id)
+    {
         this.id = id;
     }
 }

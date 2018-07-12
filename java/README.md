@@ -5,4 +5,3 @@
 
     # build and run
     ./gradlew run
-
