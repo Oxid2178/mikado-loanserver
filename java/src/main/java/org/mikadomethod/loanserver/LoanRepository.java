@@ -62,5 +62,4 @@ public class LoanRepository
         store(application);
         return new Ticket(application.getApplicationNo());
     }
-
 }

@@ -29,6 +29,9 @@ public class LoanHandler extends AbstractHandler
         response.setStatus(HttpServletResponse.SC_OK);
         baseRequest.setHandled(true);
         PrintWriter writer = response.getWriter();
+
+        System.out.println("The request is: " + request.toString());
+
         try
         {
             if (isApplication(request))
